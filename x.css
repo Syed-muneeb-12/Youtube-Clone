@@ -1,0 +1,69 @@
+/* ========================================== */
+/* MAIN LAYOUT GRIDS                          */
+/* ========================================== */
+
+/* NEW: Wrapper that forces 3 videos per row */
+.main-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  column-gap: 16px; 
+  row-gap: 40px; 
+}
+
+/* Grid for aligning channel picture and text side-by-side */
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+
+/* ========================================== */
+/* INDIVIDUAL COMPONENTS                      */
+/* ========================================== */
+
+.thumbnail{
+  width:100%;
+
+}
+.thumbnail-container {
+  width: 300px;
+  display: inline-block;
+}
+
+.thumbnail-container {
+  margin-bottom: 20px;
+}
+
+
+.video-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  display: inline-block;
+  width: 200px; 
+}
+
+.channel-name, 
+.video-inf {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+
+.channel-picture {
+  display: inline-block;
+  width: 50px;
+}
+
+
+
+.profile-picture {
+  width: 40px;
+  border-radius: 50px;
+}
+
