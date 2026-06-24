@@ -2,7 +2,27 @@
   width: 300px;
   height: 30px;
   font-size: 16px;
-  display: block;
-  text-align: center;
-  margin: 20px auto; 
+  display: inline-block;
+}
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.left-section{
+  background-color: lightblue;
+  width: 150px;
+}
+.middle-section{
+  background-color: lightpink;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 300px;
+}
+.right-section{
+  background-color: rgb(253, 160, 37);
+  width: 200px;
 }
