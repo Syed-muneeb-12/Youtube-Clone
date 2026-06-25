@@ -3,7 +3,7 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.body{
+body{
   margin: 0px;
-  align-items: start;
+  padding-top: 80px;
 }
