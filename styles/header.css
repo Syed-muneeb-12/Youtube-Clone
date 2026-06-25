@@ -51,6 +51,7 @@
   border-bottom-width:1px ;
   border-bottom-style:solid ;
   border-bottom-color: rgb(172, 172, 172);
+  z-index: 100;
   
 }
 .left-section{
@@ -105,3 +106,22 @@ height: 24px;
   height: 32px;
   border-radius: 16px;
 }
+.notifications-icon-item{
+  background-color: rgb(129, 1, 1);
+  color: white;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    border-radius: 12px;
+}
+.notification-icon-container{
+  position: relative;
+}
+

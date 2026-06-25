@@ -8,9 +8,6 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 column-gap: 10px;
 row-gap: 16px;       
-
-
-
 }
 
 /* Grid for aligning channel picture and text side-by-side */
@@ -31,8 +28,9 @@ row-gap: 16px;
 }
 .thumbnail-container {
   width: 100%;
-  display: block;
   margin-bottom: 20px;
+  position: relative;
+  display: block;
 }
 
 
@@ -80,7 +78,7 @@ row-gap: 16px;
 
 
 .video-description{
-  display:inline-flexbox;
+  display:inline-block;
   margin-right: 5px;
   margin-left: 5px;
   margin-top: 5px;
@@ -89,4 +87,19 @@ row-gap: 16px;
 .video-info{
   display:inline-block;
   width: 200px;
+}
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-family: Roboto ,  Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 2px;
 }
