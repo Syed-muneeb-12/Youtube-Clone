@@ -2,46 +2,45 @@
 /* MAIN LAYOUT GRIDS                          */
 /* ========================================== */
 
-/* NEW: Wrapper that forces 3 videos per row */
+/* Default: 4 columns on desktop */
 .main-video-grid {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-column-gap: 10px;
-row-gap: 16px;      
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 16px;      
+}
+
+/* Drops to 3 columns under 800px */
+@media (max-width: 800px){
+  .main-video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* Grid for aligning channel picture and text side-by-side */
 .video-info-grid {
   display: grid;
-  grid-template-columns: 50px 1fr ;
-  columns: 16px;
+  grid-template-columns: 50px 1fr;
+  column-gap: 16px; /* FIXED: Changed from 'columns' to 'column-gap' */
   row-gap: 10px;
 }
-
-
 
 /* ========================================== */
 /* INDIVIDUAL COMPONENTS                      */
 /* ========================================== */
 
-.thumbnail{
-  width:100%;
+.thumbnail {
+  width: 100%;
   border-radius: 4px;
-
-
+  display: block; /* Good practice to remove bottom whitespace on images */
 }
+
 .thumbnail-container {
-  margin-bottom: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* FIXED: Removed the duplicate 1px margin */
   position: relative;
-    border-width: 20px;
+  border-width: 20px;
   border-color: rgb(97, 16, 16);
 }
-
-
-
-
-
 
 .video-title {
   font-size: 16px;
@@ -50,16 +49,17 @@ row-gap: 16px;
   margin-top: 0px;
   margin-bottom: 7px;
   display: inline-block;
-  width: 250px; 
+  /* FIXED: Removed 'width: 250px' so it can resize responsively */
 }
 
-.channel-name{
-   font-size: 14px;
+.channel-name {
+  font-size: 14px;
   color: rgb(96, 96, 96);
   display: block;
   margin-top: 3px;
   margin-bottom: 3px;
 }
+
 .video-inf {
   font-size: 14px;
   color: rgb(96, 96, 96);
@@ -68,44 +68,38 @@ row-gap: 16px;
   margin-bottom: 3px;
 }
 
-
 .channel-picture {
   display: inline-block;
   width: 50px;
 }
 
-
-
 .profile-picture {
   width: 36px;
   border-radius: 50px;
-
 }
 
-
-.video-description{
-  display:inline-block;
+.video-description {
+  display: inline-block;
   margin-right: 5px;
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.video-info{
-  display:block;
-  width: 200px;
+
+.video-info {
+  display: block;
+  /* FIXED: Removed 'width: 200px' so it responds to grid sizing */
 }
-.video-time{
+
+.video-time {
   background-color: black;
   color: white;
   position: absolute;
   bottom: 8px;
   right: 5px;
-  font-family: Roboto ,  Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  padding: 4px; /* Shorthand for top/bottom/left/right padding */
   border-radius: 2px;
 }
