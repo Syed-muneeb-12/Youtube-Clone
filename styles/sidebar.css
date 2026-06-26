@@ -6,6 +6,33 @@
   background-color: white;
   width: 72px;
   border-right-width:1px ;
- border-right-color:grey ;
+ border-right-color:rgb(224, 224, 224) ;
  border-right-style: solid;
+   align-items: center;
+   z-index: 200;
+   padding-top: 5px;
+}
+.sidebar-link{
+  margin-bottom: 1px;
+  height: 74px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+.sidebar-link:hover{
+  background-color: rgb(224, 224, 224);
+}
+.sidebar-link-icon{
+  height: 24px;
+  border-radius: 20px;
+  margin-bottom: 4px;
+
+}
+.sidebar-link div{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  cursor: pointer;
 }

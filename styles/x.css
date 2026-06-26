@@ -5,15 +5,15 @@
 /* NEW: Wrapper that forces 3 videos per row */
 .main-video-grid {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr ;
 column-gap: 10px;
-row-gap: 16px;       
+row-gap: 16px;      
 }
 
 /* Grid for aligning channel picture and text side-by-side */
 .video-info-grid {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 50px 1fr ;
   row-gap: 10px;
 }
 
@@ -27,10 +27,9 @@ row-gap: 16px;
 
 }
 .thumbnail-container {
-  width: 100%;
+  margin-bottom: 1px;
   margin-bottom: 20px;
   position: relative;
-  display: block;
 }
 
 
@@ -43,7 +42,7 @@ row-gap: 16px;
   font-weight: 600;
   line-height: 20px;
   margin-top: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   display: inline-block;
   width: 250px; 
 }
@@ -72,8 +71,9 @@ row-gap: 16px;
 
 
 .profile-picture {
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
+
 }
 
 

@@ -6,6 +6,8 @@ p {
 body{
   margin: 0px;
   padding-top: 80px;
-  padding-left: 80px;
+  padding-left: 96px;
   padding-bottom: 1000px;
+  background-color: rgba(231, 231, 231, 0.199);
+  padding-right: 224px;
 }
