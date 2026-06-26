@@ -1,6 +1,6 @@
 .search {
  
-  height: 36px;
+  height: 38px;
   flex: 1;
   font-size: 15px;
   border-width: 1px;
@@ -10,17 +10,24 @@
   max-width: 6000px;
   box-shadow: inset 1px 2px 3px  rgba(0, 0 , 0,0.05);
   cursor: text;
+  padding-left: 15px;
+}
+.search:focus::placeholder{
+  color: rgb(0, 0, 0);
+}
+.search:focus {
+  border: 1px solid #0057bb; /* Changes the border to a YouTube blue */
+  outline: none;             /* Removes the browser's default black/blue glow */
 }
 
 .search::placeholder{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  padding-left: 15px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
   display: flex;
-
+  margin: 0;
 }
 .search-button{
-  height: 40px;
+  height: 42px;
   width: 66px;
   background-color: rgba(235, 235, 235, 0.726);
   border-width: 1px;
@@ -91,7 +98,7 @@
 }
 
 .header{
-  height: 55px;
+  height: 68px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -135,13 +142,16 @@ width: 180px;
   cursor: pointer;
 }
 .youtube-logo{
-  height: 20px;
+  height: 26px;
+  width: 130px;
   cursor: pointer;
 }
 .search-icon{
   height: 25px;
-  margin-top: 4px;
+  margin-top: 3px;
   cursor: pointer;
+  position: absolute;
+  margin-bottom: 2px;
 }
 .voice-icon{
   height: 24px;
@@ -166,7 +176,7 @@ cursor: pointer;
   cursor: pointer;
 }
 .notifications-icon-item{
-  background-color: rgb(129, 1, 1);
+  background-color: rgb(172, 0, 0);
   color: white;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;

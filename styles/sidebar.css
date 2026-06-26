@@ -2,11 +2,11 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  top: 55px;
+  top: 66px;
   background-color: white;
-  width: 72px;
-  border-right-width:1px ;
- border-right-color:rgb(224, 224, 224) ;
+  width: 78px;
+  border-right-width:0.5px ;
+ border-right-color:rgb(236, 236, 236) ;
  border-right-style: solid;
    align-items: center;
    z-index: 200;
